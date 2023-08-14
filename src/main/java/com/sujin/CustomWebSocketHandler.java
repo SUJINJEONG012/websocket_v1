@@ -54,7 +54,7 @@ public class CustomWebSocketHandler extends TextWebSocketHandler {
 		numSet.remove(session);
 	}
 	
-	@Override
+	
 	public void sendMessage(String payload) throws Exception{
 		for(WebSocketSession sess:numSet) {
 			TextMessage msg = new TextMessage(payload);
